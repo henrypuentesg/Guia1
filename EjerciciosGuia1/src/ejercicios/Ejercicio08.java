@@ -1,60 +1,49 @@
 package ejercicios;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ejercicio08 {
-	
-	
-	public Integer cantidadPersonas ;
+
+	public Integer cantidadPersonas;
 	public static final double VALOR_PASAJE = 10000;
 	public static final int CANTIDAD_PERSONAS_COLECTIVO = 50;
-	
+	NumberFormat formatoImporte = NumberFormat.getCurrencyInstance();
+
 	public Integer getCantidadPersonas() {
 		return cantidadPersonas;
 	}
+
 	public void setCantidadPersonas(Integer cantidadPersonas) {
 		this.cantidadPersonas = cantidadPersonas;
 	}
+
 	public static double getValorPasaje() {
 		return VALOR_PASAJE;
 	}
+
 	public static double getCantidadPersonasColectivo() {
 		return CANTIDAD_PERSONAS_COLECTIVO;
 	}
-	
+
 	public Ejercicio08(Integer cantidadPersonas) {
 		super();
 		this.cantidadPersonas = cantidadPersonas;
 	}
 
-	
 	public void calculoViaje() {
+
+		Double cantidadViajes = Math.ceil(getCantidadPersonas() / CANTIDAD_PERSONAS_COLECTIVO);
+		Integer valorTotalTuristas = (int) (getCantidadPersonas() * VALOR_PASAJE);
+		Integer valorPagarEmpresa = (int) (cantidadViajes * 2000);
 		
-		List<Integer> cantidadPasajeros = new ArrayList<Integer>();
-		int cantiad=100;
-		for(int i = 1;i<=100;i+=50) {
-			cantidad = cantidad-50;
-			
-			
-			
-		}
+		System.out.println("cantidad Personas: " + getCantidadPersonasColectivo());
+		System.out.println("cantidad de Viajes a realizar: " + cantidadViajes);
+		System.out.println("valor Total Pagar Turistas: " + formatoImporte.format(valorTotalTuristas));
+		System.out.println("valor A Pagar A Empresa: "+ formatoImporte.format(valorPagarEmpresa));
 		
-		
-		
-		int cantidadViajes = getCantidadPersonas()/CANTIDAD_PERSONAS_COLECTIVO;
-		int cantidadPersonasViajes = 
-		System.out.println("Cantidad viajes: " +cantidadViajes );
-		
-		for(int i = 1;cantidadViajes )
-		
-		
-		
-		
+
 	}
-	
-	
-	
-	
 
 }

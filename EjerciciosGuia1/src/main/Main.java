@@ -6,6 +6,7 @@ import ejercicios.Ejercicio03;
 import ejercicios.Ejercicio04;
 import ejercicios.Ejercicio06;
 import ejercicios.Ejercicio07;
+import ejercicios.Ejercicio08;
 
 public class Main {
 
@@ -67,6 +68,12 @@ public class Main {
 		ejercicio07.CantidadDeGalonesPorViaje();
 		ejercicio07.ValorGasolina();
 		
+		
+		//Ejericicio 8
+		System.out.println("");
+		System.out.println("Ejercicio 8");
+		Ejercicio08 ejercicio08 = new Ejercicio08(200);
+		ejercicio08.calculoViaje();
 		
 				
 		

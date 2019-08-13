@@ -7,6 +7,7 @@ import ejercicios.Ejercicio04;
 import ejercicios.Ejercicio06;
 import ejercicios.Ejercicio07;
 import ejercicios.Ejercicio08;
+import ejercicios.Ejercicio09;
 
 public class Main {
 
@@ -74,7 +75,12 @@ public class Main {
 		System.out.println("Ejercicio 8");
 		Ejercicio08 ejercicio08 = new Ejercicio08(200);
 		ejercicio08.calculoViaje();
-		
+
+		//Ejericicio 9
+		System.out.println("");
+		System.out.println("Ejercicio 9");
+		Ejercicio09 ejercicio09 = new Ejercicio09(1, 1, 1);
+		ejercicio09.cantidadBuses();
 				
 		
 		

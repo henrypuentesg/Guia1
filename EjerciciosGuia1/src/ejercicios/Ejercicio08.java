@@ -1,8 +1,6 @@
 package ejercicios;
 
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Ejercicio08 {
 
